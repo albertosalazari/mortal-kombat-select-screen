@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#__next,
+.fight__scope {
+  height: 100vh;
+  width: 100%;
+}
+
+.fight__logo {
+  height: 100px;
+  width: auto;
+}
+
+@font-face {
+  font-family: "mortal";
+  src: url(../public/mk2.ttf);
+}
+
+.fight__title {
+  font-family: "mortal";
+  text-align: center;
+  color: yellow;
+}
+
+.fight__scope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(32, 35, 42);
+  background-image: url("../public/backgound.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.selected__div {
+  height: 100%;
+  width: 234px;
+}
+
+.selected__layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected__name,
+.selected__button {
+  font-size: 32px;
+  font-family: "mortal";
+  color: yellow;
+  height: 37px;
+}
+
+.selected__name {
+  align-self: center;
+}
+
+.selected__image {
+  height: 436px;
+  width: auto;
+  width: 234px;
+}
+
+.selected__button {
+  text-decoration: underline yellow;
+  border: none;
+  background: none;
+}
+
+.selected__rotate {
+  transform: rotateY(180deg);
+}
+
+.character__layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character__container {
+  width: 490px;
+  height: auto;
+}
+
+.character__ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.fighter__li,
+.fighter__li .fighter__button,
+.fighter__li .fighter__image {
+  padding: 0;
+  margin: 0;
+  width: 110px;
+  height: 160px;
+}
+
+.fighter__li {
+  margin: 5px;
+}
+
+.fighter__button {
+  border: none;
+  cursor: pointer;
+}
+
+.disabled:disabled {
+  cursor: not-allowed;
+  position: relative;
+}
+
+.disabled:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(37, 28, 28, 0.8);
+}
